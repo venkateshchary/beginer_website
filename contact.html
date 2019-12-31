@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>contact form</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="screen" />
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-header">
+				Send message
+			</div>
+			<div class="card-block">
+            <form role="form" class="needs-validation" novalidate>
+                <div class="form-group col-lg-4">
+                    <label class="form-control-label" for="form-group-input">Name</label>
+                    <input type="text" class="form-control" id="form-group-input" name="name" required>
+                </div>
+                <div class="form-group col-lg-4">
+                    <label class="form-control-label" for="form-group-input">Email</label>
+                    <input type="text" class="form-control" id="form-group-input" name="email" required>
+                </div>
+                <div class="form-group col-lg-12">
+                    <label class="form-control-label" for="form-group-input">Message</label>
+                    <textarea class="form-control" id="form-group-input" name="notes" rows="6" required></textarea>
+                </div>
+				<input class="btn btn-primary" style="float: right;" type="submit" value="Submit">
+				<a href="index.html"<input class="btn btn-primary" style="float: left;" type="back" value="back">Back to main?</a>
+
+            </form>
+        </div>
+		</div>
+
+	</div>
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
+</body>
+
+</html>
