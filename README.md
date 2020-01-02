@@ -1,3 +1,6 @@
+## Hosted url is
+https://venkateshchary.github.io/blog/
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/venkateshchary/beginer_website/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
